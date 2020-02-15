@@ -12,7 +12,7 @@ public class ConnectionProvider {
 		// Connection object is created
 		Connection con= DriverManager.getConnection(
 				"jdbc:mysql://localhost:3306/userdb",
-				"userdb","1234");
+				"root","");
 		return con;
 	}
 }
