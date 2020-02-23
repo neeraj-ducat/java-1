@@ -22,7 +22,12 @@ public class AdderServlet extends HttpServlet {
 		//Content type of the response is set.
 		response.setContentType("text/html");
 		//Result is written to the response
-		out.println("<h3>Sum is: "+c+"</h3>");
+		out.println("<h3>Sum is: "+c+"</h3><hr/>");
+		//RequestDispatcher is obtained for index.html
+		RequestDispatcher rd=
+				request.getRequestDispatcher("index.html");
+		//contents of index.html get included
+		rd.include(request, response);
 		//output stream is closed
 		out.close();
 	}
