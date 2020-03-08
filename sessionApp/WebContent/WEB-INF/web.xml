@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <welcome-file-list>
+  	<welcome-file>/home.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>s1</servlet-name>
+  	<servlet-class>com.ducat.EntryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s1</servlet-name>
+  	<url-pattern>/entryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>s2</servlet-name>
+  	<servlet-class>com.ducat.ExitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s2</servlet-name>
+  	<url-pattern>/exitServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
