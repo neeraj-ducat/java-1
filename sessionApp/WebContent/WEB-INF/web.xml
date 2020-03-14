@@ -3,6 +3,9 @@
   <welcome-file-list>
   	<welcome-file>/home.html</welcome-file>
   </welcome-file-list>
+  <listener>
+  	<listener-class>com.ducat.CounterListener</listener-class>
+  </listener>
   <servlet>
   	<servlet-name>s1</servlet-name>
   	<servlet-class>com.ducat.EntryServlet</servlet-class>
@@ -19,4 +22,15 @@
   	<servlet-name>s2</servlet-name>
   	<url-pattern>/exitServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>s3</servlet-name>
+  	<servlet-class>com.ducat.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>s3</servlet-name>
+  	<url-pattern>/adminServlet</url-pattern>
+  </servlet-mapping>
+  <session-config>
+  	<session-timeout>2</session-timeout>
+  </session-config>
 </web-app>
