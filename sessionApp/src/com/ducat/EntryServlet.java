@@ -25,7 +25,5 @@ public class EntryServlet extends HttpServlet {
 		out.println("<h3>Welcome, "+name+"</h3>");
 		out.println("<a href=exitServlet>exit</a>");
 		
-		//output stream is closed
-		out.close();
 	 }
 }

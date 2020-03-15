@@ -24,7 +24,6 @@ public class AdminServlet extends HttpServlet {
 		out.println("<h4>Total users: "+t+"</h4>");
 		out.println("<h4>Current users: "+c+"</h4>");
 		out.println("<a href=adminServlet>refresh</a>");
-		//output stream is closed
-		out.close();
+		
 	 }
 }

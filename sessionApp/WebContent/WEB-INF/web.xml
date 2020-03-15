@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
-  <welcome-file-list>
-  	<welcome-file>/home.html</welcome-file>
-  </welcome-file-list>
   <listener>
   	<listener-class>com.ducat.CounterListener</listener-class>
   </listener>
+  <filter>
+  	<filter-name>f1</filter-name>
+  	<filter-class>com.ducat.HeaderFooterFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>f1</filter-name>
+  	<url-pattern>/servlets/*</url-pattern>
+  </filter-mapping>
   <servlet>
   	<servlet-name>s1</servlet-name>
   	<servlet-class>com.ducat.EntryServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>s1</servlet-name>
-  	<url-pattern>/entryServlet</url-pattern>
+  	<url-pattern>/servlets/entryServlet</url-pattern>
   </servlet-mapping>
   <servlet>
   	<servlet-name>s2</servlet-name>
@@ -20,7 +25,7 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>s2</servlet-name>
-  	<url-pattern>/exitServlet</url-pattern>
+  	<url-pattern>/servlets/exitServlet</url-pattern>
   </servlet-mapping>
   <servlet>
   	<servlet-name>s3</servlet-name>
@@ -28,7 +33,7 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>s3</servlet-name>
-  	<url-pattern>/adminServlet</url-pattern>
+  	<url-pattern>/servlets/adminServlet</url-pattern>
   </servlet-mapping>
   <session-config>
   	<session-timeout>2</session-timeout>

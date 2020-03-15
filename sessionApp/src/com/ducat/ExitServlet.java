@@ -24,7 +24,6 @@ public class ExitServlet extends HttpServlet {
 		//response is generated
 		out.println("<h3>"+name+", you have successfully exited.</h3>");
 		out.println("<a href=index.html>try again</a>");
-		//output stream is closed
-		out.close();
+		
 	 }
 }
