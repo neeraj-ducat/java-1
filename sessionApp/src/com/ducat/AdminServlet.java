@@ -2,8 +2,10 @@ package com.ducat;
 
 import javax.servlet.http.*;
 import javax.servlet.*;
-import java.io.*;
+import javax.servlet.annotation.WebServlet;
 
+import java.io.*;
+@WebServlet("/servlets/adminServlet")
 public class AdminServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request,

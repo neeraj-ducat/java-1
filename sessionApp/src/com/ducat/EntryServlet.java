@@ -2,10 +2,14 @@ package com.ducat;
 
 import javax.servlet.http.*;
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+
 import java.io.*;
 
+@WebServlet("/servlets/entryServlet")
 public class EntryServlet extends HttpServlet {
 
+	@Override
 	public void doPost(HttpServletRequest request,
 			HttpServletResponse response)
 	 throws ServletException, IOException

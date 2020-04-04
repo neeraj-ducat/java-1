@@ -1,8 +1,9 @@
 package com.ducat;
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.*;
-
+@WebListener
 public class CounterListener implements 
 	ServletContextListener, HttpSessionListener {
 

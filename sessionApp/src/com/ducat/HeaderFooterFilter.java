@@ -9,7 +9,8 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-
+import javax.servlet.annotation.WebFilter;
+@WebFilter("/servlets/*")
 public class HeaderFooterFilter implements Filter {
 
 	//data member to store the reference of FilterConfig

@@ -2,8 +2,11 @@ package com.ducat;
 
 import javax.servlet.http.*;
 import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+
 import java.io.*;
 
+@WebServlet("/servlets/exitServlet")
 public class ExitServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request,
