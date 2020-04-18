@@ -1,0 +1,29 @@
+<taglib>
+	<uri>http://ducatindia/tags</uri>
+
+	<jsp-version>2.1</jsp-version>
+	<tlib-version>1.2</tlib-version>
+	
+	<tag>
+		<name>simple</name>
+		<tag-class>com.ducat.SimpleTag</tag-class>
+	</tag>
+	<tag>
+		<name>hello</name>
+		<tag-class>com.ducat.HelloTag</tag-class>
+		<attribute>
+			<name>user</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>repeat</name>
+		<tag-class>com.ducat.RepeaterTag</tag-class>
+		<attribute>
+			<name>iteration</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
