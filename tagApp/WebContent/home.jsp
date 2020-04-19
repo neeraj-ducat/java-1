@@ -12,3 +12,11 @@ String uname=request.getParameter("userName");
 <ducat:repeat iteration="2">
 <ducat:hello user="<%=uname %>"/>
 </ducat:repeat>
+
+<ducat:changeCase target="upper">
+<p>it was written in lower case.</p>
+</ducat:changeCase>
+
+<ducat:changeCase target="lower">
+<p>IT WAS WRITTEN IN UPPER CASE.</p>
+</ducat:changeCase>
