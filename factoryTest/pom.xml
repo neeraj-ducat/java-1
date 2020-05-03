@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ducat</groupId>
+  <artifactId>factoryTest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>factoryTest</name>
+  
+  <parent>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-parent</artifactId>
+  <version>2.1.13.RELEASE</version>
+  </parent>
+  
+  <dependencies>
+  <!-- JAR files of spring IOC module and common dependencies of spring boot are added. -->
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+  		<artifactId>spring-boot-starter</artifactId>
+  	</dependency>
+  </dependencies>
+</project>
