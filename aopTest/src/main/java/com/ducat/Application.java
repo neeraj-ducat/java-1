@@ -20,10 +20,10 @@ public class Application {
 		System.out.println(value+" is returned by b() in main().");
 		System.out.println("Invoking c() method of ABC...");
 		try {
-		abc.c(5);
+		abc.c(-5);
 		}catch(Exception e)
 		{
-			System.out.println(e);
+			System.out.println("Following exception is caught in main: "+e);
 		}
 	}
 
